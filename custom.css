@@ -1,0 +1,87 @@
+.calculatorSection {
+
+}
+
+body{
+  background: linear-gradient( to right ,#92d597, #db6767);
+}
+
+.calContainer {
+}
+
+.calBody {
+}
+
+.calBlock {
+}
+
+.calBox {
+  background-color: #ffffff;
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  width: fit-content;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-family: var(--ffPrimary);
+  font-size: 2rem;
+  color: var(--gray1Color);
+  text-transform: uppercase;
+  /* margin-bottom: 2rem; */
+}
+
+.calc {
+  border: none;
+  background-color: #fefefe;
+  padding: 2rem;
+  border-radius: 8px;
+  /* min-width: fit-content; */
+}
+
+.numInput {
+  padding-right: 2rem;
+}
+
+label {
+  font-family: var(--ffPrimary);
+  font-size: 1.6rem;
+  color: var(--darkColor);
+}
+
+select {
+  font-size: 1.6rem;
+  padding: 15px 0;
+  border: 1px solid #000000;
+}
+
+select option {
+  font-size: 1.3rem; 
+}
+
+
+#result {
+  /* border: 2px solid #bbbbbb; */
+  border-radius: 10px;
+  background-color: #e2e5e2;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input{
+  font-size: 1.6rem !important;
+}
+
+input::placeholder{
+  font-size: 1.6rem;
+}
+
+.btn{
+  font-size: 1.3rem;
+  color: var(--whiteColor);
+}
