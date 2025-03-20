@@ -16,17 +16,19 @@ body{
 }
 
 .calBox {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   padding: 3rem 2rem;
   border-radius: 15px;
   width: fit-content;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: var(--glass);
+  /* border: var(--glassBorder); */
 }
 
 .title {
   font-family: var(--ffPrimary);
   font-size: 2rem;
-  color: var(--gray1Color);
+  color: var(--backGroundColor);
   text-transform: uppercase;
   /* margin-bottom: 2rem; */
 }
@@ -63,7 +65,8 @@ select option {
 #result {
   /* border: 2px solid #bbbbbb; */
   border-radius: 10px;
-  background-color: #e2e5e2;
+  background: var(--glass);
+  border: var(--glassBorder);
 }
 
 
@@ -73,7 +76,8 @@ input[type="number"]::-webkit-outer-spin-button {
     margin: 0;
 }
 
-input{
+input ,
+select{
   font-size: 1.6rem !important;
 }
 
@@ -82,6 +86,16 @@ input::placeholder{
 }
 
 .btn{
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: var(--whiteColor);
+}
+.btn:hover{
+  /* transform: translateY(-3px); */
+  scale: 1.02;
+}
+
+.form-control{
+  background: var(--glass);
+  border: var(--glassBorder);
+  border-radius: 7px;
 }

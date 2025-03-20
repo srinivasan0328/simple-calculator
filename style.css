@@ -93,6 +93,8 @@ a {
   --regularFont: 1.6rem;
   --headingFont: 3rem;
   --ffPrimary: "Poppins", sans-serif;
+  --glass: rgba(255, 255, 255, 0.15);
+  --glassBorder: 1px solid rgba(255, 255, 255, 0.2);
   /* --border: 1px solid var(--primaryColor); */
   /* --borderRadius: 0.5rem; */
 }
