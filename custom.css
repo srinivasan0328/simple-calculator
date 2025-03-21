@@ -3,6 +3,7 @@
 }
 
 body{
+  overflow-x: hidden;
   background: linear-gradient( to right , #db6767, #92d597);
   /* background: linear-gradient( 55deg , #d84747, #63ea6c); */
 }
@@ -155,4 +156,124 @@ input::placeholder{
 #input1,
 #input2:focus{
   background: var(--glass);
+}
+
+
+/* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
+
+/* for Responsive Target the ROW Code (display:grid) */
+
+/* Small devices (landscape phones, upto 576px and below) */
+/* @media (width <=576px) */
+@media (max-width: 576px) {
+  .grid-1,
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .shape1{
+    position: absolute;
+    left: -2rem;
+    top: 3rem;
+  }
+  
+  .shape2{
+    position: absolute;
+    right: -2rem;
+    top: 30rem;
+    bottom: 0;
+  }
+  
+  .ani{
+    position: relative;
+  }
+}
+
+/* Medium devices (tablets, upto 768px and above) */
+/* @media (min-width: 577px) and (max-width: 768px) */
+@media (width >=577px) and (width <=768px) {
+  .grid-1,
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .shape1{
+    position: absolute;
+    left: 6rem;
+    top: 3rem;
+  }
+  
+  .shape2{
+    position: absolute;
+    right: 6rem;
+    top: 30rem;
+    bottom: 0;
+  }
+  
+  .ani{
+    position: relative;
+  }
+}
+
+/* Large devices (Laptops, upto 992px and above) */
+/* @media (min-width: 769px) and (max-width: 992px) */
+@media (width >=769px) and (width <=992px) {
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .shape1{
+    position: absolute;
+    left: 6rem;
+    top: 3rem;
+  }
+  
+  .shape2{
+    position: absolute;
+    right: 6rem;
+    top: 30rem;
+    bottom: 0;
+  }
+  
+  .ani{
+    position: relative;
+  }
+}
+
+/* X-Large devices (large desktops, upto 1200px and above) */
+/* @media (min-width: 993px) and (max-width: 1200px) */
+@media (width >=993px) and (width <=1200px) {
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .shape1{
+    position: absolute;
+    left: 9rem;
+    top: 3rem;
+  }
+  
+  .shape2{
+    position: absolute;
+    right: 9rem;
+    top: 30rem;
+    bottom: 0;
+  }
+  
+  .ani{
+    position: relative;
+  }
+}
+
+/* XX-Large devices (larger desktops, upto 1400px and above) */
+/* @media (min-width: 1200px)  */
+@media (width >=1200px) {
+  /* write code here */
 }
