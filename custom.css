@@ -3,7 +3,8 @@
 }
 
 body{
-  background: linear-gradient( to right ,#92d597, #db6767);
+  background: linear-gradient( to right , #db6767, #92d597);
+  /* background: linear-gradient( 55deg , #d84747, #63ea6c); */
 }
 
 .calContainer {
@@ -91,6 +92,7 @@ input::placeholder{
 }
 .btn:hover{
   /* transform: translateY(-3px); */
+  color: var(--whiteColor);
   scale: 1.02;
 }
 
@@ -98,4 +100,59 @@ input::placeholder{
   background: var(--glass);
   border: var(--glassBorder);
   border-radius: 7px;
+}
+
+.shape1{
+  background: var(--glass);
+  border-radius: var(--glassBorder);
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  animation: move 10s ease-in-out 0ms infinite alternate both;
+  /* -webkit-animation: move 8s ease-in-out 2s infinite alternate both; */
+  position: absolute;
+  left: 37rem;
+  top: 3rem;
+}
+
+.shape2{
+  background: var(--glass);
+  border-radius: var(--glassBorder);
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  animation: move1 10s ease-in-out 0ms infinite alternate both;
+  /* -webkit-animation: move 8s ease-in-out 2s infinite alternate both; */
+  position: absolute;
+  right: 37rem;
+  top: 30rem;
+  bottom: 0;
+}
+
+.ani{
+  position: relative;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0) scale(0.8);
+  }
+  
+  100%{
+    transform: translateY(100px) scale(1);
+  }
+}
+
+@keyframes move1 {
+  0% {
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-100px);
+  }
+}
+
+#input1,
+#input2:focus{
+  background: var(--glass);
 }
